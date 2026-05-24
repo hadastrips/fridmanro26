@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trip Dashboard - Romania 2026</title>
+    <title>טיול משפחת פרידמן - רומניה 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        .header h1 { margin: 10px 0 0; font-size: 26px; }
+        .header h1 { margin: 10px 0 0; font-size: 24px; }
         .header p { margin: 5px 0 0; opacity: 0.9; font-size: 14px; }
 
         .logo-container {
@@ -48,7 +48,7 @@
         }
 
         .logo-img {
-            max-width: 150px;
+            max-width: 140px;
             height: auto;
             border-radius: 50%;
             border: 4px solid white;
@@ -81,8 +81,8 @@
 
         .day-card {
             background: var(--card-bg);
-            border-radius: 24px;
-            padding: 20px;
+            border-radius: 22px;
+            padding: 18px;
             margin-bottom: 25px;
             border: 1px solid var(--border-color);
             box-shadow: 0 4px 12px rgba(0,0,0,0.03);
@@ -92,68 +92,68 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
 
         .day-num {
             background: var(--primary-blue);
             color: white;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
         }
 
-        .day-title { font-size: 18px; font-weight: bold; }
+        .day-title { font-size: 16px; font-weight: bold; color: var(--text-dark); }
 
         details {
             background: #fff;
             border: 1px solid #f1f5f9;
-            border-radius: 14px;
+            border-radius: 12px;
             margin-bottom: 10px;
             overflow: hidden;
             transition: all 0.2s;
         }
 
-        details[open] { border-color: var(--primary-blue); box-shadow: 0 2px 8px rgba(52,152,219,0.1); }
+        details[open] { border-color: var(--primary-blue); box-shadow: 0 2px 8px rgba(52,152,219,0.08); }
 
         summary {
-            padding: 16px;
+            padding: 14px;
             font-weight: bold;
             cursor: pointer;
             list-style: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
+            font-size: 13.5px;
             background: #fdfdfd;
         }
 
-        summary::after { content: '＋'; color: var(--primary-blue); font-size: 16px; }
+        summary::after { content: '＋'; color: var(--primary-blue); font-size: 14px; }
         details[open] summary::after { content: '－'; }
 
         .content {
-            padding: 15px;
+            padding: 14px;
             background: #fff;
             border-top: 1px solid #f8f9fa;
         }
 
         .row {
             display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
+            gap: 8px;
+            margin-bottom: 8px;
             font-size: 13px;
             align-items: flex-start;
         }
 
-        .row span.icon { width: 22px; flex-shrink: 0; }
-        .row span.label { font-weight: bold; color: var(--text-gray); min-width: 80px; }
+        .row span.icon { width: 20px; flex-shrink: 0; }
+        .row span.label { font-weight: bold; color: var(--text-gray); min-width: 85px; }
         .row span.val { color: var(--text-dark); flex-grow: 1; }
 
         .tip-box {
@@ -167,13 +167,14 @@
         }
 
         .map-link { color: var(--primary-blue); text-decoration: none; font-weight: bold; }
+        .map-link:hover { text-decoration: underline; }
 
         .currency-bar {
             background: #e8f4fd;
             text-align: center;
-            padding: 8px;
-            font-size: 12px;
-            border-radius: 10px;
+            padding: 10px;
+            font-size: 13px;
+            border-radius: 12px;
             margin-bottom: 20px;
             font-weight: bold;
             color: #2980b9;
@@ -183,9 +184,12 @@
             text-align: center;
             font-size: 12px;
             color: #7f8c8d;
-            margin-top: 30px;
+            margin-top: 40px;
             padding: 20px;
-            border-top: 1px solid #e2e8f0;
+            border-top: 2px dashed #cbd5e1;
+            background-color: #fff3cd;
+            border-radius: 14px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -193,89 +197,292 @@
 
     <div class="header">
         <div class="logo-container">
-            <img src="data:image/jpeg;base64,...(תמונה שלך מומרת לקוד Base64)..." alt="לוגו טיול משפחת פרידמן" class="logo-img">
+            <img src="https://raw.githubusercontent.com/hadastrips/fridmanro26/main/1.jpg" alt="לוגו טיול משפחת פרידמן" class="logo-img" onerror="this.src='https://www.google.com/maps'">
         </div>
-        <h1>🇷🇴 טיול משפחת פרידמן</h1>
-        <p>לו"ז אסטרטגי חכם | רומניה 2026</p>
+        <h1>🇷🇴 טיול משפחת פרידמן - רומניה</h1>
+        <p>31/5-4/6 | 2026</p>
     </div>
 
     <div class="currency-bar">
-        💰 1 ליי = 0.65 ש"ח | 🌅 שקיעה: 20:55 | ⛅ <a href="https://www.accuweather.com/he/ro/busteni/275359/weather-forecast/275359" target="_blank" style="color:inherit">תחזית מזג אוויר</a>
+        💰 ליי 1 = 0.65 ש"ח | 🌅 שקיעה: 20:55 | ⛅ <a href="https://www.accuweather.com/he/ro/busteni/275359/weather-forecast/275359" target="_blank" style="color:inherit; text-decoration:underline;">תחזית בושטני מעודכנת</a>
     </div>
 
     <div class="quick-links">
-        <a href="https://maps.app.goo.gl/RoFnA3svyCSmNLej8" target="_blank" class="btn">🗺️ מפת טיול מלאה</a>
-        <a href="https://maps.app.goo.gl/z76uEkerYcUfZbcu8" target="_blank" class="btn">🏨 הדירה בבושטני</a>
+        <a href="https://maps.app.goo.gl/RoFnA3svyCSmNLej8" target="_blank" class="btn">🗺️ המפה שלכם</a>
+        <a href="https://maps.app.goo.gl/z76uEkerYcUfZbcu8 " target="_blank" class="btn">🏨 הדירה בבושטני</a>
     </div>
 
     <div class="day-card">
         <div class="day-header">
             <div class="day-num">1</div>
-            <div class="day-title">יום ראשון (31/5): נחיתה וטבע ראשון</div>
+            <div class="day-title">יום ראשון (31/5): נחיתה, אגם פלטינו וארמון קנטקוזינו</div>
         </div>
 
         <details>
-            <summary>🛫 09:00 - 11:00 | נחיתה בבוקרשט OTP ולקיחת רכב</summary>
+            <summary>🛫 09:00 – 11:00 | נחיתה בבוקרשט (OTP) ולקיחת רכב</summary>
             <div class="content">
-                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">יציאה מנמל התעופה OTP אל עבר Klass Wagen</span></div>
-                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">בהתאם לזמן הנחיתה</span></div>
-                <div class="row"><span class="icon">💰</span><span class="label">עלות כניסה:</span><span class="val">כלול בהזמנת הרכב (Klass Wagen)</span></div>
-                <div class="row"><span class="icon">📝</span><span class="label">מה עושים там:</span><span class="val">נחיתה בבוקר, איסוף ציוד והרכב, ויציאה צפונה לכיוון עמק דופטנה.</span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">נחיתה בנמל התעופה, איסוף הרכב מחברת Klass Wagen ויציאה צפונה.</span></div>
+                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">בהתאם לשעת הנחיתה</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">כלול בהזמנה</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">נחיתה בבוקר, הסדרת הרכב השכור ויציאה לכיוון עמק דופטנה.</span></div>
             </div>
         </details>
 
         <details>
-            <summary>🧺 11:00 - 14:00 | נסיעה ועצירה באגם פלטינו (Lake Paltinu)</summary>
+            <summary>🧺 11:00 – 14:00 | עמק דופטנה ואגם פלטינו (Lake Paltinu)</summary>
             <div class="content">
-                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה וחצי נסיעה מנמל התעופה OTP</span></div>
-                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">אתר טבע פתוח</span></div>
-                <div class="row"><span class="icon">💰</span><span class="label">עלות כניסה:</span><span class="val">חינם</span></div>
-                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">עצירה וטיול רגלי באגם פלטינו, פיקניק ومנוחה משפחתית מול נוף האגם.</span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה וחצי נסיעה מנמל התעופה אל עמק דופטנה</span></div>
+                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">חופשי / פתוח (אתר טבע)</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">חינם</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">עצירה, טיול רגלי באגם פלטינו, מנוחה ופיקניק משפחתי מפנק על האגם.</span></div>
                 <div class="row"><span class="icon">📍</span><span class="label">מפה:</span><span class="val"><a href="https://maps.app.goo.gl/2Lp4355XHLpudxZd7" target="_blank" class="map-link">לחצו לניווט לאגם פלטינו</a></span></div>
             </div>
         </details>
 
         <details>
-            <summary>🔑 14:00 - 16:00 | הגעה לבושטני וצ'ק-אין בדירה</summary>
+            <summary>🔑 14:00 – 16:00 | נסיעה והגעה לדירה בבושטני</summary>
             <div class="content">
-                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה מאגם פלטינו לבושטני</span></div>
-                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">הגעה לעיירה בושטני, כניסה לדירה, פריקת מזוודות והתארגנות קלה.</span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה נסיעה מאגם פלטינו אל העיירה בושטני</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">הגעה, קבלת מפתחות לדירה (צ'ק-אין), פריקת מזוודות והתארגנות קלה.</span></div>
+                <div class="row"><span class="icon">📍</span><span class="label">מפה:</span><span class="val"><a href="https://maps.app.goo.gl/z76uEkerYcUfZbcu8" target="_blank" class="map-link">לחצו לניווט המדויק לדירה בבושטני</a></span></div>
             </div>
         </details>
 
         <details>
-            <summary>🏰 16:00 - 18:00 | ארמון קנטקוזינו (אופציונלי)</summary>
+            <summary>🏰 16:00 – 18:00 | סיור בגני ארמון קנטקוזינו (Cantacuzino Castle)</summary>
             <div class="content">
-                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">5 דקות בתוך בושטיני</span></div>
-                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">עד 20:00</span></div>
-                <div class="row"><span class="icon">💰</span><span class="label">עלות כניסה:</span><span class="val">25 ליי לגנים (כ-16 ש"ח)</span></div>
-                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">סיור בגנים המעוצבים והיפהפיים של הארמון.</span></div>
-                <div class="tip-box">💡 <strong>מידע חשוב:</strong> המקום מושלם לתמונות משפחתיות!</div>
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">נסיעה מקומית קצרה בתוך בושטיני</span></div>
+                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">פתוח עד השעה 20:00</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">כניסה לגנים בלבד 25 ליי לאדם (כ-16 ש"ח)</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">ביקור אופציונלי וסיור רגלי בגנים המרהיבים והמעוצבים של הארמון.</span></div>
+                <div class="row"><span class="icon">📍</span><span class="label">מפה:</span><span class="val"><a href="https://maps.app.goo.gl/HsrnbwjsugJLWCBd9" target="_blank" class="map-link">לחצו לניווט לארמון קנטקוזינו</a></span></div>
+                <div class="tip-box">💡 <strong>מידע חשוב:</strong> הגנים מרשימים ביותר ומשקיפים על הנוף, אופציה מעולה לצילומים משפחתיים!</div>
             </div>
         </details>
 
         <details>
-            <summary>🌊 18:00 - 20:00 | מפל השואגת (אופציונלי)</summary>
+            <summary>🌊 18:00 – 20:00 | מסלול מפל השואגת</summary>
             <div class="content">
-                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">10 דקות לנקודת התחלה</span></div>
-                <div class="row"><span class="icon">💰</span><span class="label">עלות כניסה:</span><span class="val">חינם</span></div>
-                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">טיול רגלי ביער (40 דק' לכל צד) עד למפל המרשים.</span></div>
-                <div class="row"><span class="icon">📍</span><span class="label">חניה במפה:</span><span class="val"><a href="https://maps.app.goo.gl/Ymve4SfV8XVYPRyv8" target="_blank" class="map-link">ניווט לחניה</a></span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">10 דקות נסיעה מהארמון אל חניון המפל</span></div>
+                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">אתר טבע פתוח</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">חינם</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">ביקור אופציונלי במפל - הליכה רגועה ונעימה בתוך היער, כ-40 דקות הליכה לכל צד.</span></div>
+                <div class="row"><span class="icon">🅿️</span><span class="label">חניה במפה:</span><span class="val"><a href="https://maps.app.goo.gl/Ymve4SfV8XVYPRyv8" target="_blank" class="map-link">לחצו לניווט לחניון מפל השואגת</a></span></div>
+                <div class="row"><span class="icon">🌊</span><span class="label">מפל במפה:</span><span class="val"><a href="https://maps.app.goo.gl/9x5HBEgarhuuYm7VA" target="_blank" class="map-link">לחצו להצגת מיקום המפל</a></span></div>
+                <div class="tip-box">💡 <strong>מידע חשוב:</strong> המסלול כולל עלייה קלה בהתחלה שלו, מומלץ להגיע בנעלי הליכה סגורות.</div>
             </div>
         </details>
 
         <details>
-            <summary>🌙 20:00 | חזרה לדירה</summary>
+            <summary>🌙 20:00 | חזרה לדירה ומנוחה</summary>
             <div class="content">
-                <p>חזרה לדירה, מנוחה והתארגנות, לילה טוב!</p>
+                <p>חזרה מסודרת לדירה בבושטני, ארוחת ערב, מנוחה ולילה טוב.</p>
+            </div>
+        </details>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-num">2</div>
+            <div class="day-title">יום שני (1/6): פסגות הבוצ'ג'י, בית הכנסת ושופינג בבראשוב</div>
+        </div>
+
+        <details>
+            <summary>🚡 08:30 – 12:30 | רכבל בושטני, הספינקס והבבלות (Babele & Sphinx)</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">נסיעה של דקות בודדות מתחנת הדירה לרכבל</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">כ-130 ש"ח לאדם (200 ליי) לרכבל הלוך ושוב</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">עלייה ברכבל המרכזי אל פסגות ההרים, מסלול הליכה פשוט ונופי אל תצורות הסלע המפורסמות וירידה חזרה.</span></div>
+                <div class="row"><span class="icon">📍</span><span class="label">מפה:</span><span class="val"><a href="https://maps.app.goo.gl/FLXmZx4nsY9ts5Jj7" target="_blank" class="map-link">לחצו לניווט לרכבל בושטני</a></span></div>
+                <div class="tip-box">⚠️ <strong>מידע חשוב:</strong> מומלץ מאוד להגיע מוקדם ישר בפתיחה כדי לחסוך עמידה ממושכת בתורים!</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🕍 12:30 – 14:30 | נסיעה וביקור בבית הכנסת "בית ישראל" בבראשוב</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה נסיעה מבושטני אל העיר בראשוב</span></div>
+                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">שימו לב! נסגר בשעה 16:00</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">20 ליי למבוגר</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">ביקור היסטורי ורגוע בבית הכנסת המקומי (Sinagoga Beth Israel) המפואר.</span></div>
+                <div class="row"><span class="icon">📍</span><span class="label">מפה:</span><span class="val"><a href="https://maps.app.goo.gl/aax6GB59gWQUvNtF6" target="_blank" class="map-link">לחצו לניווט לבית הכנסת בבראשוב</a></span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🏘️ 14:30 – 16:00 | סיור רגלי בעיר העתיקה של בראשוב</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">הליכה קצרה ברגל מבית הכנסת</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">סיור אופציונלי בכיכר המועצה (Piața Sfatului) וזמן הליכה חופשי במדרחוב Strada Republicii המלא בחנויות ובתי קפה.</span></div>
+                <div class="row"><span class="icon">⛲</span><span class="label">כיכר המועצה:</span><span class="val"><a href="https://maps.app.goo.gl/8hkWVaU4rg2Re1cL6" target="_blank" class="map-link">ניווט לכיכר המועצה</a></span></div>
+                <div class="row"><span class="icon">🛍️</span><span class="label">המדרחוב:</span><span class="val"><a href="https://maps.app.goo.gl/QTVvLGfH93J9kAnZ9" target="_blank" class="map-link">ניווט למדרחוב החנויות</a></span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🛍️ 16:00 – 20:00 | זמן קניונים ושופינג מורחב בבראשוב</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">10-12 דקות נסיעה ממרכז העיר אל אזורי הקניונים</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">זמן חופשי לקניות, אוכל ובילוי בקניון AFI Brașov החדש, או לחלופין נסיעה קצרה לקניון Coresi Shopping Resort הפתוח.</span></div>
+                <div class="row"><span class="icon">🏢</span><span class="label">קניון AFI:</span><span class="val"><a href="https://maps.app.goo.gl/MXDSUpTxHsa5HTJ37" target="_blank" class="map-link">ניווט לקניון AFI Brașov</a></span></div>
+                <div class="row"><span class="icon">🏬</span><span class="label">קניון Coresi:</span><span class="val"><a href="https://maps.app.goo.gl/28JAfGDetakUvPHr5" target="_blank" class="map-link">ניווט לקניון Coresi Shopping Resort</a></span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🌙 21:00 | נסיעה חזרה לדירה</summary>
+            <div class="content">
+                <p>נסיעה של שעה חזרה לבושטני, התארגנות בדירה ולילה טוב.</p>
+            </div>
+        </details>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-num">3</div>
+            <div class="day-title">יום שלישי (2/6): קניון שבעת הסולמות וטיול טרקטורונים</div>
+        </div>
+
+        <details>
+            <summary>🪜 09:00 – 13:30 | נסיעה ומסלול קניון שבעת הסולמות (Șapte Scări)</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">30 דקות נסיעה מבושטני לתחילת המסלול</span></div>
+                <div class="row"><span class="icon">🥾</span><span class="label">זמן מסלול:</span><span class="val">כ-3 שעות הליכה יפהפייה כוללת (ללא עצירות ארוכות)</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">40 ליי למבוגר</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">טרק רגלי חווייתי וטיפוס בסולמות ברזל מובנים בתוך נקיק סלע צר, לצד מפלי מים זורמים וטבע פראי.</span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">חניון/התחלה:</span><span class="val"><a href="https://maps.app.goo.gl/3UkdvQsQZDUY3hME9" target="_blank" class="map-link">ניווט לתחילת מסלול הסולמות</a></span></div>
+                <div class="row"><span class="icon">📍</span><span class="label">מיקום קניון:</span><span class="val"><a href="https://maps.app.goo.gl/EBSTE2MiAuhnLPZS7" target="_blank" class="map-link">הצגת מיקום שבעת הסולמות</a></span></div>
+                <div class="tip-box">⚠️ <strong>זמן אקסטרים:</strong> מסלול אתגרי ומיוחד מאוד! מומלץ להגיע בנעלי הליכה סגורות חזקות ולא לסחוב תיקי גב כבדים.</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🚜 13:30 – 17:00 | טיול טרקטורונים / רכבי שטח (ATV / UTV)</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">30 דקות נסיעה מהסולמות אל נקודת המפגש באזור פרדיאל (13:30-14:00)</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">600 ליי לטרקטורון / 1000 ליי לרייזר (ל-3 שעות)</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">יציאה לטיול נהיגת שטח אתגרי ומודרך בתוך שבילי היער העבותים באזור פרדיאל. חוויה מלאת אדרנלין.</span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🌙 17:30 – 21:00 | חזרה והתארגנות וערב חופשי</summary>
+            <div class="content">
+                <p>חזרה לדירה בבושטני ב-17:30 להתארגנות ומנוחה, ולאחר מכן יציאה לערב חופשי משפחתי, מהנה ורגוע בבושטני או בסינאיה הסמוכה לארוחת ערב.</p>
+            </div>
+        </details>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-num">4</div>
+            <div class="day-title">יום רביעי (3/6): שוק בראן, מויצ'ו דה סוס ומגלשות הרים</div>
+        </div>
+
+        <details>
+            <summary>🎨 09:00 – 12:00 | נסיעה דרך כביש פראשנוב ושוק האומנות בבראן</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה נסיעה מבושטני לבראן דרך כביש פראשנוב</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">כניסה לשוק חופשית</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">נסיעה בדרך הררית נופית, הגעה לעיירה בראן וביקור בשוק המקומי המסורתי לעבודות יד, מזכרות וטקסטיל (מחוץ לטירה).</span></div>
+                <div class="row"><span class="icon">🛣️</span><span class="label">כביש פראשנוב:</span><span class="val"><a href="https://maps.app.goo.gl/vfj127bx8AcgckoP6" target="_blank" class="map-link">הצגת כביש פראשנוב במפה</a></span></div>
+                <div class="row"><span class="icon">🏰</span><span class="label">טירת בראן:</span><span class="val"><a href="https://maps.app.goo.gl/eCRrJMGoA9BsoC5e6" target="_blank" class="map-link">הצגת מיקום טירת בראן</a></span></div>
+                <div class="row"><span class="icon">🌳</span><span class="label">הפארק הצמוד:</span><span class="val"><a href="https://maps.app.goo.gl/d7f1pLp8J8UTw33Q6" target="_blank" class="map-link">ניווט לפארק בראן</a></span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🪵 12:00 – 14:30 | הכפר הגבוה מויצ'ו דה סוס ונדנדות ההרים</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">30 דקות נסיעה מבראן אל הכפר מויצ'ו דה סוס (Moieciu de Sus)</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">עלייה לכפר הררי גבוה ושלו, תצפיות פנורמיות מדהימות על העמק וזמן כיף בנדנדות עץ גדולות מול הנוף הפתוח.</span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">ניווט לכפר:</span><span class="val"><a href="https://maps.app.goo.gl/ErytGgknZ5QLLbuL6" target="_blank" class="map-link">לחצו לניווט למויצ'ו דה סוס</a></span></div>
+                <div class="row"><span class="icon">🪵</span><span class="label">מיקום נדנדות:</span><span class="val"><a href="https://maps.app.goo.gl/tbvFcwEzZDRatugy9" target="_blank" class="map-link">לחצו לניווט לנדנדות ההרים</a></span></div>
+                <div class="tip-box">💡 <strong>מידע חשוב:</strong> נקודה מדהימה לפתוח ערסל, לעשות פיקניק קטן או לצלם תמונות נוף משגעות!</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🎢 14:30 – 16:30 | מגלשות הרים אלפיניות בפודנטה (Fundata)</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">30 דקות נסיעה ממויצ'ו אל מתחם הגלישה בפודנטה (14:30-15:00)</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">70 ליי למבוגר / 50 ליי לילד</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">גלישה מהירה, חווייתית וכיפית במגלשות הרים אלפיניות מול נופי הרי הקרפטים הפתוחים.</span></div>
+                <div class="row"><span class="icon">🎢</span><span class="label">מגלשות במפה:</span><span class="val"><a href="https://maps.app.goo.gl/H5z1YJMuW6RQncED8" target="_blank" class="map-link">לחצו לניווט למגלשות בפודנטה</a></span></div>
+                <div class="tip-box">🔥 <strong>זמן אקסטרים:</strong> הגלישה ממוקמת בתוך קומפלקס הנופש והספורט המרשים Cheile Gradistei.</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🛖 16:30 – 19:30 | דרך נופית והכפרים הציוריים פשטרה ומגורה</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">נסיעה בדרך הנופית בין הכפרים, ושעה וחצי נסיעה חזרה לבושטני (18:00-19:30)</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">נסיעה פסטורלית ואיטית בדרך נופית עוצרת נשימה אל הכפרים פשטרה (Peștera) ומגורה (Măgura). סיור רגוע בין גבעות ירוקות ובתי עץ עתיקים.</span></div>
+                <div class="row"><span class="icon">🗺️</span><span class="label">מסלול כפרים:</span><span class="val"><a href="https://maps.app.goo.gl/6QmUD6BfVPkvTCfM7" target="_blank" class="map-link">הצגת מסלול הכפרים במפה</a></span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🌙 21:00 | חזרה לדירה בבושטני</summary>
+            <div class="content">
+                <p>חזרה מסודרת לדירה בבושטני לארוחת ערב, התארגנות ושינה טובה לאחר יום עמוס בטבע.</p>
+            </div>
+        </details>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-num">5</div>
+            <div class="day-title">יום חמישי (4/6): טירת פלש, אגם בולבוצ'י ושופינג אחרון</div>
+        </div>
+
+        <details>
+            <summary>👑 10:00 – 11:30 | צ'ק-אאוט וביקור בגני טירת פלש (Peleș Castle)</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">15 דקות נסיעה מבושטני אל העיירה סינאיה</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">הכניסה והסיור בחצר ובגנים החיצוניים בחינם</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">מבצעים צ'ק-אאוט ועוזבים את הדירה ב-10:00. מגיעים לסינאיה לסיור של שעה וחצי בגנים המלכותיים המדהימים והמטופחים של טירת פלש.</span></div>
+                <div class="row"><span class="icon">🚗</span><span class="label">אזור טירה:</span><span class="val"><a href="https://maps.app.goo.gl/xV9gqBCp2MEZMZro9" target="_blank" class="map-link">ניווט לחניון/אזור טירת פלש</a></span></div>
+                <div class="row"><span class="icon">🏰</span><span class="label">גני הטירה:</span><span class="val"><a href="https://maps.app.goo.gl/mvB231ALdGB3tQdz6" target="_blank" class="map-link">הצגת מיקום גני הטירה במפה</a></span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>💧 11:30 – 14:30 | נסיעה דרך כביש ההרים ואגם בולבוצ'י (Bolboci Lake)</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעה נסיעה מסינאיה בכביש הררי גבוה ופתלתל אל האגם (11:30-12:30)</span></div>
+                <div class="row"><span class="icon">🕒</span><span class="label">שעות פתיחה:</span><span class="val">שמורת טבע פתוחה - חופשי</span></div>
+                <div class="row"><span class="icon">💰</span><span class="label">עלות:</span><span class="val">חינם</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">ביקור אופציונלי באגם - נסיעה חווייתית, הגעה לאגם בולבוצ'י הנסתר בלב ההרים, סיור, הליכה רגועה וזמן משפחתי שקט לצד המים.</span></div>
+                <div class="row"><span class="icon">🛣️</span><span class="label">כביש הרים:</span><span class="val"><a href="https://maps.app.goo.gl/zvFwZhcrDAxAGXmaA" target="_blank" class="map-link">הצגת כביש ההרים במפה</a></span></div>
+                <div class="row"><span class="icon">🅿️</span><span class="label">חניון אגם:</span><span class="val"><a href="https://maps.app.goo.gl/ZCrWzb437pzV8NC28" target="_blank" class="map-link">ניווט לחניון באגם בולבוצ'י</a></span></div>
+                <div class="row"><span class="icon">🌊</span><span class="label">מיקום אגם:</span><span class="val"><a href="https://maps.app.goo.gl/pRGtxiFF1YkmjzqT9" target="_blank" class="map-link">הצגת מיקום האגם במפה</a></span></div>
+                <div class="tip-box">💡 <strong>מידע חשוב:</strong> הדרך להר פתלתלה, מפותלת ויפהפייה, יש לנהוג בזהירות וליהנות מהטבע האלפיני הפראי.</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🏙️ 14:30 – 19:15 | נסיעה ושופינג מטורף בקניון AFI Cotroceni בבוקרשט</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">שעתיים נסיעה מירידת הרי הקרפטים אל עבר בוקרשט (14:30-16:30)</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">שלוש שעות מלאות של קניות חופשיות, השלמות, אוכל ובילוי בקניון הענק, כולל ביקור חובה ורכישות בסניף הענקי של רשת Primark המבוקשת.</span></div>
+            </div>
+        </details>
+
+        <details>
+            <summary>✈️ 19:15 – 22:20 | החזרת הרכב בשדה והמראה חזרה לישראל</summary>
+            <div class="content">
+                <div class="row"><span class="icon">🚗</span><span class="label">נסיעה:</span><span class="val">45 דקות נסיעה מהקניון אל סניף חברת ההשכרה בשדה (19:15-20:00)</span></div>
+                <div class="row"><span class="icon">🛫</span><span class="label">שעת המראה:</span><span class="val">טיסה חזור בשעה 22:20</span></div>
+                <div class="row"><span class="icon">📝</span><span class="label">מה עושים שם:</span><span class="val">הגעה לסניף חברת Klass Wagen בשעה 20:00 בדיוק, החזרת הרכב השכור, ולקיחת השאטל המהיר של החברה ישירות לטרמינל לצ'ק-אין וביטחון.</span></div>
+                <div class="row"><span class="icon">📍</span><span class="label">החזרת רכב:</span><span class="val"><a href="https://maps.app.goo.gl/Xvxeo26Nibvgunhk8" target="_blank" class="map-link">לחצו לניווט לסניף קלאס וואגן</a></span></div>
             </div>
         </details>
     </div>
 
     <div class="footer">
-        כל הזכויות שמורות להדס טרכטר - יועצת טיולים בארץ ובעולם 050-5685356<br>
-        אין להעביר ללא אישור מפורש. העובר על כך עובר על גזל לפי<br>
-        דין תורה וחוקי המקום.
+        <strong>כל הזכויות שמורות להדס טרכטר - יועצת טיולים בארץ ובעולם 050-5685356</strong><br>
+        אין להעביר ללא אישור מפורש. העובר על כך עובר על גזל לפי דין תורה וחוקי המקום.
     </div>
 
 </body>
